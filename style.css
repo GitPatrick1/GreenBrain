@@ -1,0 +1,105 @@
+/* Nuove classi personalizzate per il GreenBrain */
+.greenbrain-bg {
+  background-color: #228B22 !important; /* ForestGreen */
+}
+.greenbrain-bg-light {
+  background-color: #C1E1C1 !important; /* Verde chiaro da pianta */
+}
+.greenbrain-bg-dark {
+  background-color: #196619 !important; /* Verde scuro da pianta */
+}
+.greenbrain-text {
+  color: #228B22 !important;
+}
+.greenbrain-text-dark {
+  color: #196619 !important;
+}
+.greenbrain-text-light {
+  color: #e0f8e0 !important;
+}
+
+/* --- Codice originale --- */
+.hidden {
+  display: none;
+}
+
+/* Altezza per la mappa */
+#mapid {
+  height: 300px;
+}
+
+/* Popup standard per messaggi informativi */
+.popup {
+  position: fixed;
+  left: 0;
+  top: 20%;
+  margin-left: 1rem;
+  padding: 0.75rem 1rem;
+  border-radius: 0.375rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  color: white;
+  z-index: 50;
+  opacity: 0;
+  transform: translateY(-20px);
+  animation: fadeIn 0.5s forwards;
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeOut {
+  to {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+}
+
+/* Hover animazione per pulsanti */
+button:hover {
+  transform: scale(1.05);
+  transition: transform 0.2s ease;
+}
+
+/* Popup di conferma: posizionato in cima, larghezza completa, colore blu */
+.confirm-popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #3b82f6;
+  color: white;
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 100;
+  animation: slideDown 0.5s forwards;
+}
+
+@keyframes slideDown {
+  from {
+    transform: translateY(-100%);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
+.confirm-popup button {
+  margin-left: 1rem;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 0.375rem;
+  background-color: rgba(255, 255, 255, 0.2);
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.confirm-popup button:hover {
+  background-color: rgba(255, 255, 255, 0.4);
+}
