@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Scopri GreenAssistant, il dispositivo IoT per l'identificazione dei rifiuti.">
+  <meta name="keywords" content="GreenAssistant, GreenBrain, IoT, riciclo, AI">
+  <meta name="author" content="GreenBrain Team">
+  <title>GreenAssistant - GreenBrain</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css"> <!-- Stile della web app -->
+  <link rel="stylesheet" href="product.css"> <!-- Stili specifici della pagina prodotto -->
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+</head>
+<body class="min-h-screen font-sans antialiased">
+
+  <!-- Header identico alla web app con tasto indietro -->
+  <header class="bg-primary-color text-white py-4 px-6 flex justify-between items-center">
+    <div class="flex items-center">
+      <button id="back-button" class="text-white hover:text-secondary-color mr-4">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
+        </svg>
+      </button>
+      <h1 class="text-2xl font-bold">GreenBrain</h1>
+    </div>
+    <div>
+      <!-- Altri elementi dell'header della web app, se presenti -->
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero py-16 text-center">
+    <h2 class="text-4xl font-bold mb-4">GreenAssistant</h2>
+    <p class="text-xl mb-8">Il futuro del riciclo domestico con AI</p>
+    <div class="video-container mb-8">
+    <!-- 
+    Per il layout attuale, il contenitore dell'immagine ha una larghezza massima "max-w-2xl" (circa 672px).
+    Per ottenere una resa ottimale su dispositivi ad alta densità di pixel (retina), 
+    si consiglia di utilizzare un'immagine con una risoluzione di circa 1344x756 pixel (rapporto 16:9).
+    -->
+      <img src="demo.jpg" alt="Demo" class="w-full max-w-2xl mx-auto rounded-lg shadow-lg">
+    </div>
+  </section>
+
+  <!-- How It Works -->
+  <section class="how-it-works py-16 text-center">
+    <h3 class="text-3xl font-bold mb-12">Come Funziona</h3>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-4xl mx-auto">
+      <div>
+        <img src="camera-icon.png" alt="Inquadra il rifiuto" class="h-16 w-16 mx-auto mb-4">
+        <h4 class="text-xl font-semibold mb-2">Inquadra il rifiuto</h4>
+        <p>Posiziona il rifiuto davanti alla telecamera.</p>
+      </div>
+      <div>
+        <img src="ai-icon.png" alt="GreenAssistant analizza" class="h-16 w-16 mx-auto mb-4">
+        <h4 class="text-xl font-semibold mb-2">GreenAssistant analizza</h4>
+        <p>L'AI identifica il tipo di materiale.</p>
+      </div>
+      <div>
+        <img src="notification-icon.png" alt="Ricevi feedback" class="h-16 w-16 mx-auto mb-4">
+        <h4 class="text-xl font-semibold mb-2">Ricevi feedback</h4>
+        <p>Ottieni istruzioni su come riciclare correttamente.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Tech Specs -->
+  <section class="tech-specs py-16 text-center">
+    <h3 class="text-3xl font-bold mb-12">Specifiche Tecniche</h3>
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 max-w-4xl mx-auto">
+      <div>
+        <h4 class="text-xl font-semibold mb-2">Telecamera</h4>
+        <p>1080p HD</p>
+      </div>
+      <div>
+        <h4 class="text-xl font-semibold mb-2">Angolo Visivo</h4>
+        <p>120°</p>
+      </div>
+      <div>
+        <h4 class="text-xl font-semibold mb-2">Materiali</h4>
+        <p>Plastica riciclata al 100%</p>
+      </div>
+      <div>
+        <h4 class="text-xl font-semibold mb-2">Compatibilità</h4>
+        <p>iOS, Android, Web</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="py-10 text-center">
+    <p>© 2025 GreenBrain. Tutti i diritti riservati.</p>
+  </footer>
+
+  <script src="product.js"></script>
+</body>
+</html>

@@ -1,0 +1,25 @@
+/* Stili specifici per la pagina prodotto, allineati alla web app */
+body {
+    background-color: #f9f9f9; /* Sfondo chiaro come nella web app */
+    color: #333;
+  }
+  
+  header {
+    background-color: #228B22; /* Verde GreenBrain */
+  }
+  
+  .hero, .how-it-works, .tech-specs, footer {
+    background-color: #ffffff;
+    padding: 2rem;
+    margin: 1rem 0;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  button {
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #196619; /* Verde scuro al hover */
+  }
