@@ -1429,7 +1429,7 @@ function finalizeScan() {
   axios({
     method: "POST",
     url: "https://detect.roboflow.com/garbage-classification-3/2",
-    params: { api_key: "Mt8LZXYyuViQq304Bl9Z" },
+    params: { api_key: "LA_TUA_CHIAVE_API" },
     data: base64Data,
     headers: { "Content-Type": "application/x-www-form-urlencoded" }
   })
